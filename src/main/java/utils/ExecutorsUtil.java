@@ -1,4 +1,4 @@
-package utils;
+﻿package utils;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutorService;
@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ExecutorsUtil {
     public static void main(String[] args) {
         ExecutorService executorService =
-                new ThreadPoolExecutor(1, 2, 100, TimeUnit.MILLISECONDS, new ArrayBlockingQueue<Runnable>(3));
+                new ThreadPoolExecutor(1, 8, 100, TimeUnit.MILLISECONDS, new ArrayBlockingQueue<Runnable>(3));
         for (int i = 0; i < 10; i++) {
             executorService.execute(new Task());// 提交十个任务给线程池
         }
