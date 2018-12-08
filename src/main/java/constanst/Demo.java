@@ -1,27 +1,27 @@
 package constanst;
 
 public class Demo {
-    private String name;
-    private Integer age;
+    private String name2;
+    private Integer age2;
 
     public String getName() {
-        return name;
+        return name2;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name2 = name;
     }
 
     public Integer getAge() {
-        return age;
+        return age2;
     }
 
     public void setAge(Integer age) {
-        this.age = age;
+        this.age2 = age;
     }
 
     public Demo(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+        this.name2 = name;
+        this.age2 = age;
     }
 }

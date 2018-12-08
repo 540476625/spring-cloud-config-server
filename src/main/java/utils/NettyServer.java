@@ -5,7 +5,7 @@ import java.util.concurrent.*;
 public class NettyServer {
     public static void init(){
         CyclicBarrier barrier = new CyclicBarrier(5, () -> {
-            System.out.println(222);
+            System.out.println(000);
         });
         ExecutorService es = Executors.newCachedThreadPool();
         for (int i = 0; i < 5; i++) {
